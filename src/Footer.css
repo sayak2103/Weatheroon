@@ -1,0 +1,21 @@
+footer{
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    padding: 1rem;
+}
+.refLink-outbox{
+    margin-top: 2rem;
+}
+.refLink>a{
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+}
+.refLink{
+    opacity: 0.6;
+}
+.refLink:hover{
+    opacity: 1;
+}
