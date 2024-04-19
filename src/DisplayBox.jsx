@@ -5,7 +5,7 @@ export default function DisplayBox({WeatherInfo}){
     function capFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-
+    
     if(WeatherInfo.main)
     return(
         <div className="DisplayBox">
@@ -37,7 +37,29 @@ export default function DisplayBox({WeatherInfo}){
         </div>
     )
     else
-    return(<></>);
+    return(
+        <div className="DisplayBox">
+            <div className="top">
+                <div className="loc">
+                    <span style={{fontSize:50}}></span>
+                    <br />
+                    <span style={{fontSize:20}}></span>
+                </div>
+                <div className="img">
+                    
+                    <br />
+                    <span style={{fontSize:20}}></span>
+                </div>
+            </div>
+            <div className="temp">
+                <span style={{fontSize: 20}}></span>
+                <p></p>
+            </div>
+            <div className="details">
+                
+            </div>
+        </div>
+    );
 }
 
 /*
